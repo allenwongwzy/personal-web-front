@@ -91,6 +91,7 @@ class Contact extends Component {
                                     name="message"
                                     value={this.state.message}
                                     onChange={this.handleChange}
+                                    style={{resize: 'none'}}
                                 />
                             </div>
                             <Button type="submit" style={{fontSize:'1.5vh'}} size={'sm'}>Send Form</Button>
