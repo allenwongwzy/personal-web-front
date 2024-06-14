@@ -14,7 +14,7 @@ class FooterPage extends Component {
                                 <p>Call: 0433-852-236</p>
                         </div>
                         <div className={'flex-grow-1'}>
-                                <p>Write: info@mysite.com</p>
+                                <p>Write: allenwong.wzy@gmail.com</p>
                         </div>
                     </div>
                 </footer>
