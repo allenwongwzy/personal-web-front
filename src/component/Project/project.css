@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../../assets/fonts/avenir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.custom-font {
+    font-family: 'Avenir', sans-serif;
+    font-size: 2vh;
+}
+
+.background-container-project {
+    background-color: #99cccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 100% !important;
+    align-items: center;
+
+    width: 100vw; /* Set width to 100% of the viewport width */
+    min-height: 100vh; /* Set height to 100% of the viewport height */
+    padding: 20px; /* Add some padding for better spacing */
+    box-sizing: border-box;
+}
+
+.project-card {
+    box-shadow: var(--shd, -11.31px 11.31px 25px 0px  rgba(138,131,124,0.23));
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    overflow: hidden;
+    width: 700px;
+    background-color: white;
+    border-radius: 5px;
+
+
+    min-height: 50vh;
+    min-width: 50vw;
+}
+
+.project-title{
+    width: 60%;
+    text-align: left;
+    flex-grow: 1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-graph-description{
+    width: 40%;
+    height: auto;
+    flex-grow: 1;
+    margin-left: 20px;
+    margin-right: 0;
+    background-color: gray;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-graph-description img {
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the image take up the full width */
+    height: 100%; /* Make the image take up the full height */
+    object-fit: cover; /* Ensure the image covers the entire container without distortion */
+}
+
+
+.blue-square-project {
+    width: 10px;  /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
+    background-color: blue;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+
+    }
+    .project-description{
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        width: 80% !important;
+
+    }
+    .project-head{
+        margin-top: 20px !important;
+    }
+    .project-title {
+        width: 80%; /* Adjust width for larger screens */
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .project-title p{
+        width: 100%;
+    }
+    .project-title-info{
+        margin: 0!important;
+        margin-top: 20px !important;
+    }
+
+    .project-graph-description {
+        width: 100%; /* Adjust width for larger screens */
+        margin-left: 0 !important;
+    }
+}
+

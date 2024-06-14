@@ -1,0 +1,211 @@
+:root {
+    --shd: -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23);
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../../assets/fonts/avenir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.custom-font {
+    font-family: 'Avenir', sans-serif;
+    font-size: 2vh;
+}
+
+.background-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 900px;
+
+
+    max-width: 100% !important;
+
+    width: 100vw; /* Set width to 100% of the viewport width */
+    min-height: 100vh; /* Set height to 100% of the viewport height */
+    padding: 20px; /* Add some padding for better spacing */
+    box-sizing: border-box;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.background-1 {
+    left: 0;
+    width: 40%;
+    background-color: #99cccc;
+}
+
+.background-4 {
+    right: 0;
+    width: 60%;
+    background-color: white;
+}
+
+.content {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #c3f1f1;
+    width: 25%;
+    height: 60vh;
+    z-index: 1;
+    box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .6));
+    border-radius: 5px;
+
+}
+
+.box-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 40%;
+    height: 60vh;
+    z-index: 1;
+}
+
+.profile-card {
+    background-color: transparent !important;
+    border: none !important;
+    width: 100%;
+    flex-grow: 2;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    margin: 20px auto;
+}
+
+
+.divider {
+    width: 70px;
+    border-top: 3px solid #044081;
+    margin: 20px auto;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%; /* 或使用百分比宽度 */
+}
+
+.social-icons a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.card-background {
+    background-color: white;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.text-center-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.text-center-container p{
+    text-align: left;
+    margin-left: 30px;
+    line-height: 1.5em;
+
+}
+
+.box-2, .box-3 {
+
+    max-height: calc(100vh - 40px); /* 例如，留出一定的间距 */
+}
+
+
+@media (max-width: 768px) {
+    .background-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        min-height: 1100px;
+        align-items: center;
+    }
+
+    .background {
+        position: relative;
+    }
+
+
+
+    .background-1{
+        width: 100%;
+
+        height: 300px;
+
+    }
+    .background-4 {
+        width: 100%;
+
+        flex-grow: 1;
+        bottom: 0;
+    }
+    .content {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        min-height: 100vh;
+        margin-top: 50px !important;
+
+    }
+
+    .box-2, .box-3 {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .text-center-container p {
+        margin-left: 10px;
+
+    }
+
+    .profile-card img {
+        width: 100px;
+    }
+
+
+}
+@media (max-height: 720px){
+    .background-4 {
+        width: 100%;
+        height: 100vh;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../../assets/fonts/avenir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.custom-font {
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.5vh;
+}
+
+.footer-icons a {
+    color: #333;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+.footer-icons a:hover {
+    color: #007bff;
+}
+.foot-container{
+    margin-top: 20px !important;
+}
+
+.foot-info{
+    align-items: center;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+    display: flex; /* Ensure rows are flex containers as well */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+@media (max-width: 768px) {
+
+}

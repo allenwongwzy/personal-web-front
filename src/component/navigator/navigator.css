@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../../assets/fonts/avenir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nav-bar-custom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 0;
+    position: fixed !important;
+    z-index: 1000;
+
+    font-size: 2vh;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-family: 'Avenir', sans-serif;
+    font-size: 2vh !important;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+    width: 40px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.custom-nav-link {
+    color: black;
+}
+
+.custom-nav-link.active {
+    color: blue;
+}

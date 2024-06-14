@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../../assets/fonts/avenir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.background-container-resume {
+    background-color: #99cccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 100% !important;
+    align-items: center;
+
+    width: 100vw; /* Set width to 100% of the viewport width */
+    min-height: 100vh; /* Set height to 100% of the viewport height */
+    padding: 20px; /* Add some padding for better spacing */
+    box-sizing: border-box;
+}
+
+.img {
+    width: 40px;
+    height: 40px;
+}
+
+.resume-card {
+    box-shadow: var(--shd, -11.31px 11.31px 25px 0px  rgba(138,131,124,0.23));
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin-bottom: 70px;
+    overflow: hidden;
+    width: 50%;
+    background-color: white;
+    border-radius: 5px;
+}
+.job-title{
+    width: 40%;
+    text-align: left;
+    flex-grow: 1;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+
+.job-description{
+    width: 40%;
+    text-align: left;
+    flex-grow: 1;
+    margin-right: 20px;
+    margin-top: 140px;
+    margin-bottom: 40px;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.custom-font {
+    font-family: 'Avenir', sans-serif;
+}
+
+.blue-square {
+    width: 20px;  /* Adjust the size as needed */
+    height: 20px; /* Adjust the size as needed */
+    background-color: blue;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .resume-card {
+        flex-direction: column; /* Change to row layout for larger screens */
+        width: 80%; /* Fixed width for larger screens */
+        align-items: center;
+
+    }
+
+    .job-title {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .job-description {
+        margin-top: 20px;
+        width: 80%;
+        margin-right: 0;
+    }
+    .resume-title{
+        margin-top: 30px !important;
+        margin-bottom: 50px !important;
+    }
+}
