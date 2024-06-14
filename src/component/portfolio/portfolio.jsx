@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 class Portfolio extends Component {
     render() {
         return (
-            <div className="custom-font ">
+            <div className="custom-font-portfolio ">
                 <Container className="background-container ">
                     <div className="background background-1"></div>
                     <div className="background background-4"></div>
@@ -44,8 +44,8 @@ class Portfolio extends Component {
                                     <div className="text-center ">
                                         <Button variant="primary" as={Link} to="/resume" onClick={() => {
                                             this.props.handleClick('resume')
-                                        }} className="me-3">Resume</Button>
-                                        <Button variant="outline-dark" as={Link} to="/projects" onClick={() => {
+                                        }} style={{fontSize:'1.5vh'}} className="me-3">Resume</Button>
+                                        <Button variant="outline-dark" style={{fontSize:'1.5vh'}} as={Link} to="/projects" onClick={() => {
                                             this.props.handleClick('projects')
                                         }}>Projects</Button>
                                     </div>

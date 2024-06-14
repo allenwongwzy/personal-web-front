@@ -5,7 +5,7 @@ class FooterPage extends Component {
     render() {
         return (
             <div>
-                <footer className="text-center custom-font foot-container">
+                <footer className="text-center custom-font-footer foot-container">
                     <div className={'foot-info'} style={{display:"flex",height:"auto",justifyContent:"space-around"}}>
                         <div className={'flex-grow-1'}>
                                 <p>© 2024 by Allen Wong Created using React Bootstrap</p>

@@ -6,6 +6,7 @@ import './app.css'
 import Footerpage from "./component/FooterPage/footerpage";
 import Project from "./component/Project/project";
 import {Component} from "react";
+import Contact from "./component/Contact/contact";
 
 class App extends Component {
     constructor(props) {
@@ -63,6 +64,7 @@ class App extends Component {
                         <Route path="*" element={<Portfolio handleClick={this.handleClick} className="mt-custom"/>}/>
                         <Route path="/resume" element={<Resume/>}/>
                         <Route path="/projects" element={<Project/>}/>
+                        <Route path="/contact" element={<Contact/>}/>
                     </Routes>
                 </div>
                 <Footerpage/>

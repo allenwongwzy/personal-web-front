@@ -6,7 +6,7 @@ class Resume extends Component {
     render() {
         return (
             <div>
-                <Container className="background-container-resume custom-font" style={{overflow: 'hidden'}}>
+                <Container className="background-container-resume custom-font-resume" style={{overflow: 'hidden'}}>
 
                     <div  style={{
                         display: "flex",
@@ -17,7 +17,7 @@ class Resume extends Component {
                         alignItems: 'baseline',
                     }}>
                         <div className={'blue-square'}></div>
-                        <h2>Resume</h2>
+                        <h2 style={{fontSize:'2.5vh'}}>Resume</h2>
                     </div>
 
                     <div className={'resume-title'} style={{
@@ -30,8 +30,8 @@ class Resume extends Component {
                         width: '80%'
 
                     }}>
-                        <h3>Experience</h3>
-                        <Button variant="primary">Download CV</Button>
+                        <h3 style={{fontSize:'2.5vh'}}>Experience</h3>
+                        <Button style={{fontSize:'1.5vh'}} variant="primary">Download CV</Button>
 
                     </div>
 

@@ -6,7 +6,7 @@ class Project extends Component {
     render() {
         return (
             <div>
-                <Container className="background-container-project custom-font" style={{overflow: 'hidden'}}>
+                <Container className="background-container-project custom-font-project" style={{overflow: 'hidden'}}>
                     <div className={'project-head'} style={{
                         display: "flex",
                         height: "auto",
@@ -16,7 +16,7 @@ class Project extends Component {
                         alignItems: 'baseline',
                     }}>
                         <div className={'blue-square'}></div>
-                        <h2>Projects</h2>
+                        <h2 style={{fontSize:'2.5vh'}}>Projects</h2>
                     </div>
                     <div className={'project-description'} style={{width: '50%', textAlign: 'start', marginTop: '50px', marginBottom: '70px'}}>
                         <p>I am a software engineer with over five years of experience, having
@@ -29,8 +29,8 @@ class Project extends Component {
                             <div style={{display: 'flex', justifyContent: 'start'}}>
                                 <div className={'blue-square-project'}></div>
                                 <div style={{marginLeft: '20px'}}>
-                                    <h5>Project name 01</h5>
-                                    <h6>Role Title</h6>
+                                    <h5 style={{fontSize:'2.5vh'}}>Project name 01</h5>
+                                    <h6 style={{fontSize:'2vh'}}>Role Title</h6>
                                 </div>
                             </div>
                             <div className={'project-title-info'} style={{marginLeft: '40px', marginTop: '40px'}}>

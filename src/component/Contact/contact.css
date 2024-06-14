@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../../assets/fonts/avenir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.custom-font-contact {
+    font-family: 'Avenir', sans-serif;
+    font-size: 2vh;
+}
+
+.background-container-contact {
+    background-color: #99cccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100% !important;
+    align-items: center;
+
+    width: 100vw; /* Set width to 100% of the viewport width */
+    min-height: 100vh; /* Set height to 100% of the viewport height */
+    padding: 20px; /* Add some padding for better spacing */
+    box-sizing: border-box;
+}
+
+.background-form{
+    width: 40vw;
+    height: 50vh;
+    background-color: white;
+}
+.contact-from{
+    margin: 30px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+label span {
+    color: blue;
+}
+.first-line{
+    display: flex;
+    text-align: start;
+}
+.margin-1{
+    margin-right: 20px;
+}
+.contact-head{
+    margin-top: 20px !important;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    margin-bottom: 80px;
+    overflow: hidden;
+    align-items: baseline;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom: 2px solid #ea0541;
+}
+
+@media (max-width: 768px) {
+    .first-line {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+
+    .margin-1 {
+        margin-right: 0;
+    }
+
+    .contact-head {
+        margin-top: 20px !important;
+        display: flex;
+        height: auto;
+        justify-content: center;
+        margin-bottom: 20px;
+        overflow: hidden;
+        align-items: baseline;
+        transform: translateY(-30%);
+    }
+
+    .background-container-contact {
+        background-color: #99cccc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 100% !important;
+        align-items: center;
+
+        width: 100vw; /* Set width to 100% of the viewport width */
+        min-height: 85vh; /* Set height to 100% of the viewport height */
+        padding: 20px; /* Add some padding for better spacing */
+        box-sizing: border-box;
+    }
+    .background-form{
+        width: 70%;
+        height: auto;
+        background-color: white;
+    }
+}

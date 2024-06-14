@@ -13,7 +13,9 @@
     padding: 0;
     position: fixed !important;
     z-index: 1000;
-
+}
+.custom-font-navbar {
+    font-family: 'Avenir', sans-serif;
     font-size: 2vh;
 }
 

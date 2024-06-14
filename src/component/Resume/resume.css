@@ -57,8 +57,9 @@
     margin-top: 20px;
 }
 
-.custom-font {
+.custom-font-resume {
     font-family: 'Avenir', sans-serif;
+    font-size: 2vh;
 }
 
 .blue-square {

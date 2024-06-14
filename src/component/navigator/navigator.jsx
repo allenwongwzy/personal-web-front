@@ -6,7 +6,7 @@ import './navigator.css'
 class Navigator extends Component {
     render() {
         return (
-            <Navbar bg="white" expand="lg" className="pt-2 nav-bar-custom">
+            <Navbar bg="white" expand="lg" className="pt-2 nav-bar-custom custom-font-navbar">
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Navbar.Brand  as={Link} to="/home" onClick={() => {
@@ -17,7 +17,7 @@ class Navigator extends Component {
                         </Navbar.Brand>
                         <div className="flex-grow-1"></div>
                         <Nav className="ml-auto">
-                            <Nav.Link as={Link} to="/home" onClick={() => {
+                            <Nav.Link  as={Link} to="/home" onClick={() => {
                                 this.props.handleClick('home')
                             }} style={{
                                 color: this.props.navigatorStates.home ? 'blue' : 'black'}}>ABOUT ME</Nav.Link>
