@@ -46,6 +46,10 @@ class App extends Component {
             // 在回调中获取更新后的状态
             console.log('Updated state:', this.state);
         });
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }
 
     render() {
