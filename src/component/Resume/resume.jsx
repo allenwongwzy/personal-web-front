@@ -69,7 +69,7 @@ class Resume extends Component {
                         </div>
                         <div className='job-description'>
                             <p>
-                                Responsibilities are design, development, testing and continuous optimization of the search engine system, and develop new functions according to the needs of the business team..
+                                Responsibilities are design, development, testing and continuous optimization of the search engine system, and develop new functions according to the needs of the business team.
                             </p>
                             <p> Participate in the software requirements analysis of the performance reporting system,produce corresponding software development requirements documents, and complete the development of the systems.</p>
 
