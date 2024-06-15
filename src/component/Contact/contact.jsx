@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Button, Container} from "react-bootstrap";
 import './contact.css'
+import axios from "axios";
 
 class Contact extends Component {
     constructor(props) {
@@ -21,10 +22,20 @@ class Contact extends Component {
         });
     };
 
-    handleSubmit = (e) => {
+    handleSubmit = async (e) => {
         e.preventDefault();
-        // 在这里处理表单提交逻辑
-        console.log('Form submitted', this.state);
+        const formData = {
+            firstName: this.state.firstName,
+            lastName: this.state.lastName,
+            email: this.state.email,
+            subject: this.state.subject,
+            message: this.state.message
+        };
+        const backendUrl = process.env.REACT_APP_BASEURL;
+        const {data: result} = await axios.post(`${backendUrl}/mail`,formData)
+        if (result.status === 200) {
+            console.log("Send successful");
+        }
     };
     render() {
         return (
