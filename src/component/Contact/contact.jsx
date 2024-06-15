@@ -33,8 +33,17 @@ class Contact extends Component {
         };
         const backendUrl = process.env.REACT_APP_BASEURL;
         const {data: result} = await axios.post(`${backendUrl}/mail`,formData)
-        if (result.status === 200) {
+        if (result.code === 200) {
             console.log("Send successful");
+            this.setState({
+                firstName: '',
+                lastName: '',
+                email: '',
+                subject: '',
+                message: ''
+            },()=>{
+                console.log("========",this.state);
+            })
         }
     };
     render() {
