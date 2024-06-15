@@ -55,7 +55,7 @@ class Portfolio extends Component {
                                             <p>
                                                 I am a software engineer with over five years of experience, having
                                                 worked for
-                                                multiple Fortune 500 companies, including Alibaba and Microsoft.
+                                                multiple Fortune 500 companies, including Alibaba and Shopee.
                                             </p>
                                         </div>
                                         <div>

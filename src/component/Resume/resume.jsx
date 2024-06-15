@@ -61,19 +61,17 @@ class Resume extends Component {
                     <div className="resume-card">
                         <div className="job-title">
                             <br/>
-                            <h4 style={{fontSize: '3vh',color:'blue'}}>2035 - Present</h4>
-                            <h5 style={{fontSize:'2vh'}}><strong>Software Engineer</strong></h5>
-                            <h7 style={{fontSize:'2vh'}}>Alibaba Group</h7>
+                            <h4 style={{fontSize: '3vh',color:'blue'}}>2022 - 2023</h4>
+                            <h5 style={{fontSize:'2vh'}}><strong>Senior Software Engineer</strong></h5>
+                            <h7 style={{fontSize:'2vh'}}>Shopee</h7>
                             <br/>
-                            <h7 style={{fontSize:'2vh'}}>Technical Department</h7>
+                            <h7 style={{fontSize:'2vh'}}>Search Team</h7>
                         </div>
                         <div className='job-description'>
                             <p>
-                                I am a software engineer with over five years of experience, having
-                                worked for multiple Fortune 500 companies, including Alibaba and Microsoft.
+                                Responsibilities are design, development, testing and continuous optimization of the search engine system, and develop new functions according to the needs of the business team..
                             </p>
-                            <p> I have extensive experience in backend development and am also familiar with frontend
-                                development. Feel free to contact me!</p>
+                            <p> Participate in the software requirements analysis of the performance reporting system,produce corresponding software development requirements documents, and complete the development of the systems.</p>
 
                         </div>
                     </div>
@@ -81,19 +79,17 @@ class Resume extends Component {
                     <div className="resume-card">
                         <div className={'job-title'}>
                             <br/>
-                            <h4 style={{fontSize: '3vh', color: 'blue'}}>2035 - Present</h4>
-                            <h5 style={{fontSize: '2vh'}}><strong>Software Engineer</strong></h5>
+                            <h4 style={{fontSize: '3vh', color: 'blue'}}>2020 - 2022</h4>
+                            <h5 style={{fontSize: '2vh'}}><strong>Senior Software Engineer</strong></h5>
                             <h7 style={{fontSize: '2vh'}}>Alibaba Group</h7>
                             <br/>
                             <h7 style={{fontSize: '2vh'}}>Technical Department</h7>
                         </div>
                         <div className={'job-description'}>
                             <p>
-                                I am a software engineer with over five years of experience, having
-                                worked for multiple Fortune 500 companies, including Alibaba and Microsoft.
+                                At Alibaba Group, as a senior software engineer, I am mainly responsible for the development of the tracking system and the supply chain system. The tracking system includes management, monitoring, and analysis of point data reported by clients, while the supply chain system covers the entire process from order receiving to outbound delivery.
                             </p>
-                            <p> I have extensive experience in backend development and am also familiar with frontend
-                                development. Feel free to contact me!</p>
+                            <p> Responsible for ensuring the security of major promotions, including end-to-end stress testing before major promotions, conducting drills for abnormal situations, and emergency service maintenance during major promotions.</p>
 
                         </div>
                     </div>
@@ -101,19 +97,17 @@ class Resume extends Component {
                     <div className="resume-card">
                         <div className={'job-title'}>
                             <br/>
-                            <h4 style={{fontSize: '3vh', color: 'blue'}}>2035 - Present</h4>
+                            <h4 style={{fontSize: '3vh', color: 'blue'}}>2019 - 2020</h4>
                             <h5 style={{fontSize: '2vh'}}><strong>Software Engineer</strong></h5>
-                            <h7 style={{fontSize: '2vh'}}>Alibaba Group</h7>
+                            <h7 style={{fontSize: '2vh'}}>Fiberhome Starrysky Co., Ltd.</h7>
                             <br/>
                             <h7 style={{fontSize: '2vh'}}>Technical Department</h7>
                         </div>
                         <div className={'job-description'}>
                             <p style={{textAlign: 'left'}}>
-                                I am a software engineer with over five years of experience, having
-                                worked for multiple Fortune 500 companies, including Alibaba and Microsoft.
+                                At Fiberhome Starrysky Co., Ltd., as a software engineer, I am mainly responsible for developing a service monitoring system. The system I developed is deployed and used in more than 20 subsidiaries of the group.
                             </p>
-                            <p> I have extensive experience in backend development and am also familiar with frontend
-                                development. Feel free to contact me!</p>
+                            <p> Participate in service performance tuning to improve service performance to meet customer needs.</p>
 
                         </div>
                     </div>
