@@ -1,8 +1,31 @@
 import React, {Component} from 'react';
 import {Button, Container} from "react-bootstrap";
 import './resume.css'
+import axios from "axios";
 
 class Resume extends Component {
+    constructor(props) {
+        super(props);
+    this.handleOnClick=this.handleOnClick.bind(this);
+    }
+    handleOnClick =async () => {
+        const backendUrl = process.env.REACT_APP_BASEURL;
+        try {
+            const response = await axios.get(`${backendUrl}/resume`, {
+                responseType: 'blob'
+            });
+            const blob = new Blob([response.data], { type: response.headers['content-type'] });
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', 'resume.pdf');
+            document.body.appendChild(link);
+            link.click();
+            window.URL.revokeObjectURL(url);
+        } catch (error) {
+            console.error('Error downloading the file', error);
+        }
+    }
     render() {
         return (
             <div>
@@ -31,7 +54,7 @@ class Resume extends Component {
 
                     }}>
                         <h3 style={{fontSize:'2.5vh'}}>Experience</h3>
-                        <Button style={{fontSize:'1.5vh'}} variant="primary">Download CV</Button>
+                        <Button style={{fontSize:'1.5vh'}} variant="primary" onClick={this.handleOnClick}>Download CV</Button>
 
                     </div>
 
