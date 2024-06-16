@@ -22,6 +22,9 @@
     min-height: 100vh; /* Set height to 100% of the viewport height */
     padding: 20px; /* Add some padding for better spacing */
     box-sizing: border-box;
+
+
+    transform: translateY(-10px);
 }
 
 .background-form{
