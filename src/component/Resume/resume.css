@@ -12,10 +12,9 @@
     justify-content: flex-start;
     max-width: 100% !important;
     align-items: center;
-
+    transform: translateY(-10px);
     width: 100vw; /* Set width to 100% of the viewport width */
     min-height: 100vh; /* Set height to 100% of the viewport height */
-    padding: 20px; /* Add some padding for better spacing */
     box-sizing: border-box;
 }
 
