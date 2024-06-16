@@ -12,7 +12,7 @@
     justify-content: flex-start;
     max-width: 100% !important;
     align-items: center;
-    transform: translateY(-10px);
+    /*transform: translateY(-10px);*/
     width: 100vw; /* Set width to 100% of the viewport width */
     min-height: 100vh; /* Set height to 100% of the viewport height */
     box-sizing: border-box;
@@ -70,6 +70,18 @@
 }
 
 @media (max-width: 768px) {
+    .background-container-resume {
+        background-color: #99cccc;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 100% !important;
+        align-items: center;
+        transform: translateY(-10px);
+        width: 100vw; /* Set width to 100% of the viewport width */
+        min-height: 100vh; /* Set height to 100% of the viewport height */
+        box-sizing: border-box;
+    }
     .resume-card {
         flex-direction: column; /* Change to row layout for larger screens */
         width: 80%; /* Fixed width for larger screens */
