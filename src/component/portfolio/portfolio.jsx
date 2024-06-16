@@ -60,9 +60,8 @@ class Portfolio extends Component {
                                         </div>
                                         <div>
                                             <p>
-                                                I have extensive experience in backend development and am also familiar
-                                                with
-                                                frontend development.
+                                                In the past five years I mainly focus on backend development and have extensive experience. I'm also familiar
+                                                with frontend development.
                                             </p>
                                         </div>
                                         <div>

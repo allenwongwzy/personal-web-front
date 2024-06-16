@@ -20,7 +20,7 @@ class Project extends Component {
                     </div>
                     <div className={'project-description'} style={{width: '50%', textAlign: 'start', marginTop: '50px', marginBottom: '70px'}}>
                         <p>I am a software engineer with over five years of experience, having
-                            worked for multiple Fortune 500 companies, including Alibaba and Microsoft.I have extensive
+                            worked for multiple Fortune 500 companies, including Alibaba and Shopee.I have extensive
                             experience in backend development and am also familiar with frontend
                             development. Feel free to contact me!</p>
                     </div>
