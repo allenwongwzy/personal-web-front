@@ -20,7 +20,9 @@
     color: #007bff;
 }
 .foot-container{
-    margin-top: 20px !important;
+    /*margin-top: 20px !important;*/
+    padding-top: 20px;
+
 }
 
 .foot-info{
@@ -34,5 +36,9 @@
     justify-content: center; /* Center content horizontally */
 }
 @media (max-width: 768px) {
+    .foot-container{
+        /*margin-top: 20px !important;*/
+        padding-top: 0;
 
+    }
 }
