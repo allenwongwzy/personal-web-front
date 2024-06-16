@@ -35,7 +35,9 @@
 .form-group {
     margin-bottom: 15px;
 }
-
+.model-radius{
+    border-radius: 0;
+}
 label {
     display: block;
     margin-bottom: 5px;
@@ -116,5 +118,8 @@ textarea:focus {
         width: 70%;
         height: auto;
         background-color: white;
+    }
+    .end-title{
+        transform: translateY(-20%);
     }
 }

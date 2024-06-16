@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Button, Container} from "react-bootstrap";
+import {Button, Col, Container} from "react-bootstrap";
 import './contact.css'
 import axios from "axios";
 
@@ -11,16 +11,30 @@ class Contact extends Component {
             lastName: '',
             email: '',
             subject: '',
-            message: ''
+            message: '',
+            show: 'none'
         };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleDisplay = this.handleDisplay.bind(this);
+    }
+
+    handleDisplay = () => {
+        this.setState({show: ''}, () => {
+            console.log(this.state.show);
+        });
+        setTimeout(() => {
+            this.setState({show: 'none'});
+        }, 3000);
     }
 
     handleChange = (e) => {
-        const { name, value } = e.target;
+        const {name, value} = e.target;
         this.setState({
             [name]: value
         });
     };
+
 
     handleSubmit = async (e) => {
         e.preventDefault();
@@ -32,7 +46,7 @@ class Contact extends Component {
             message: this.state.message
         };
         const backendUrl = process.env.REACT_APP_BASEURL;
-        const {data: result} = await axios.post(`${backendUrl}/mail`,formData)
+        const {data: result} = await axios.post(`${backendUrl}/mail`, formData)
         if (result.code === 200) {
             console.log("Send successful");
             this.setState({
@@ -40,21 +54,21 @@ class Contact extends Component {
                 lastName: '',
                 email: '',
                 subject: '',
-                message: ''
-            },()=>{
-                console.log("========",this.state);
+                message: '',
+            }, () => {
+                console.log("========", this.state);
             })
+            this.handleDisplay()
         }
     };
+
     render() {
         return (
             <div>
                 <Container className={'background-container-contact custom-font-contact'}>
-                    <div className={'contact-head'} style={{
-
-                    }}>
+                    <div className={'contact-head'} style={{}}>
                         <div className={'blue-square'}></div>
-                        <h2 style={{fontSize:'2.5vh'}}>Contact me</h2>
+                        <h2 style={{fontSize: '2.5vh'}}>Contact me</h2>
                     </div>
                     <div className={'background-form'}>
                         <form className="contact-from" onSubmit={this.handleSubmit}>
@@ -114,7 +128,17 @@ class Contact extends Component {
                                     style={{resize: 'none'}}
                                 />
                             </div>
-                            <Button type="submit" style={{fontSize:'1.5vh'}} size={'sm'}>Send Form</Button>
+
+                            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'baseline'}}>
+                                <Col>
+                                    <Button type="submit" style={{fontSize: '1.5vh'}} size={'sm'}>Send Form</Button>
+                                </Col>
+                                <Col>
+                                    <p className={'end-title'}
+                                       style={{fontSize: '1.5vh', display: this.state.show, color: 'blue'}}>Thanks for submitting </p>
+                                </Col>
+                            </div>
+
                         </form>
                     </div>
 
