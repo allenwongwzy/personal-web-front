@@ -13,18 +13,25 @@ class Portfolio extends Component {
                     <div className="content">
                         <div className="box-2">
                             <Card className="profile-card">
-                                <Card.Img variant="top"
-                                          src="../photo/personalphoto.png"/>
 
-                                <Card.Body className="text-center">
-                                    <Card.Title className="font-weight-bold"
-                                                style={{fontSize: '3vh'}}>Allen</Card.Title>
-                                    <Card.Title className="font-weight-bold" style={{fontSize: '3vh'}}>Wong</Card.Title>
-                                    <hr className="divider"/>
-                                    <br/>
-                                    <Card.Subtitle className="mb-2 text-muted" style={{fontSize: '2vh'}}>Software
-                                        Engineer</Card.Subtitle>
-                                    <p style={{fontSize:'1vh'}}>visit number: {this.props.visitNumbers}</p>
+                                <Card.Body className="text-center" style={{display: "flex",flexDirection: 'column', justifyContent: 'space-between'}}>
+                                    <div style={{height:'60%',alignContent:'center'}}>
+                                        <Card.Img variant="top"
+                                                  src="../photo/personalphoto.png"/>
+
+
+                                        <Card.Title className="font-weight-bold"
+                                                    style={{fontSize: '3vh'}}>Allen</Card.Title>
+                                        <Card.Title className="font-weight-bold"
+                                                    style={{fontSize: '3vh'}}>Wong</Card.Title>
+                                    </div>
+                                    <div style={{height:'40%',alignContent:'center'}}>
+                                        <hr className="divider"/>
+                                        <br/>
+                                        <Card.Subtitle className="mb-2 text-muted" style={{fontSize: '2vh'}}>Software
+                                            Engineer</Card.Subtitle>
+                                        <p style={{fontSize: '1vh'}}>visit number: {this.props.visitNumbers}</p>
+                                    </div>
                                 </Card.Body>
                             </Card>
                             <Container className="card-background">
