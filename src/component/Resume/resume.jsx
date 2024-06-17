@@ -133,8 +133,9 @@ class Resume extends Component {
                         </div>
                         <div className={'job-description'}>
                             <p style={{textAlign: 'left'}}>
-                            At Fiberhome Starrysky Co., Ltd., as a software engineer, I am mainly responsible for
-                                developing a service monitoring system. The system I developed is deployed and used in
+                                At Fiberhome Starrysky Co., Ltd., as a software engineer, I am mainly responsible for
+                                developing a service monitoring system, as well as refactor the business system to improve
+                                service performance. The system I developed is deployed and used in
                                 more than 20 subsidiaries of the group.
                             </p>
                             <p> Participate in service performance tuning to improve service performance to meet
