@@ -24,7 +24,7 @@ class Portfolio extends Component {
                                     <br/>
                                     <Card.Subtitle className="mb-2 text-muted" style={{fontSize: '2vh'}}>Software
                                         Engineer</Card.Subtitle>
-                                    <p style={{fontSize:'1vh'}}>visit number: 41</p>
+                                    <p style={{fontSize:'1vh'}}>visit number: {this.props.visitNumbers}</p>
                                 </Card.Body>
                             </Card>
                             <Container className="card-background">

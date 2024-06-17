@@ -19,8 +19,8 @@ class App extends Component {
                 resume: false,
                 projects: false,
                 contact: false,
-                visitNumber:0
-            }
+            },
+            visitNumber:null
         };
     }
     async componentDidMount() {
@@ -42,7 +42,7 @@ class App extends Component {
         const backendUrl = process.env.REACT_APP_BASEURL;
         const {data: result} = await axios.get(`${backendUrl}/visitnumber`)
         if (result.code === 200) {
-            const visitNumber = result.visitNumber;
+            const visitNumber = result.data;
             this.setState({visitNumber: visitNumber},()=>{
                 console.log('visitNumber', visitNumber);
             })
@@ -72,7 +72,7 @@ class App extends Component {
                 </div>
                 <div className='mt-custom content-container'>
                     <Routes>
-                        <Route path="*" element={<Portfolio handleClick={this.handleClick} className="mt-custom"/>}/>
+                        <Route path="*" element={<Portfolio visitNumbers={this.state.visitNumber} handleClick={this.handleClick} className="mt-custom"/>}/>
                         <Route path="/resume" element={<Resume/>}/>
                         <Route path="/projects" element={<Project/>}/>
                         <Route path="/contact" element={<Contact/>}/>
