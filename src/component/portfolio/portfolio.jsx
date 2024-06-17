@@ -14,7 +14,7 @@ class Portfolio extends Component {
                         <div className="box-2">
                             <Card className="profile-card">
                                 <Card.Img variant="top"
-                                          src="../photo/person.jpeg"/>
+                                          src="../photo/personalphoto.png"/>
 
                                 <Card.Body className="text-center">
                                     <Card.Title className="font-weight-bold"
