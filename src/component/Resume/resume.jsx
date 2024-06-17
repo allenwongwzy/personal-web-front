@@ -72,7 +72,7 @@ class Resume extends Component {
                                 <h7 style={{fontSize: '2vh'}}>Search Team</h7>
                             </div>
                             <div className={'resume-graph'}>
-                                <img src="../photo/shopee.svg" alt="logo"/>
+                                <img src="../photo/shopee.png" alt="logo"/>
                             </div>
                         </div>
                         <div className='job-description'>
