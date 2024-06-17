@@ -7,6 +7,7 @@ import Footerpage from "./component/FooterPage/footerpage";
 import Project from "./component/Project/project";
 import {Component} from "react";
 import Contact from "./component/Contact/contact";
+import axios from "axios";
 
 class App extends Component {
     constructor(props) {
@@ -17,11 +18,12 @@ class App extends Component {
                 home: false,
                 resume: false,
                 projects: false,
-                contact: false
+                contact: false,
+                visitNumber:0
             }
         };
     }
-    componentDidMount() {
+    async componentDidMount() {
         const path = window.location.pathname;
         let key = path.split('/').pop();
         if (key === '') {
@@ -36,6 +38,15 @@ class App extends Component {
 
             console.log(this.state.navigatorStates);
         });
+
+        const backendUrl = process.env.REACT_APP_BASEURL;
+        const {data: result} = await axios.get(`${backendUrl}/visitnumber`)
+        if (result.code === 200) {
+            const visitNumber = result.visitNumber;
+            this.setState({visitNumber: visitNumber},()=>{
+                console.log('visitNumber', visitNumber);
+            })
+        }
     }
     handleClick = (key) => {
         const list = ['home', 'resume', 'projects', 'contact']

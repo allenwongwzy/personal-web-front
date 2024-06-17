@@ -17,12 +17,14 @@ class Portfolio extends Component {
                                           src="../photo/person.jpeg"/>
 
                                 <Card.Body className="text-center">
-                                    <Card.Title className="font-weight-bold" style={{fontSize:'3vh'}}>Allen</Card.Title>
-                                    <Card.Title className="font-weight-bold" style={{fontSize:'3vh'}}>Wong</Card.Title>
+                                    <Card.Title className="font-weight-bold"
+                                                style={{fontSize: '3vh'}}>Allen</Card.Title>
+                                    <Card.Title className="font-weight-bold" style={{fontSize: '3vh'}}>Wong</Card.Title>
                                     <hr className="divider"/>
                                     <br/>
-                                    <Card.Subtitle className="mb-2 text-muted" style={{fontSize:'2vh'}}>Software Engineer</Card.Subtitle>
-
+                                    <Card.Subtitle className="mb-2 text-muted" style={{fontSize: '2vh'}}>Software
+                                        Engineer</Card.Subtitle>
+                                    <p style={{fontSize:'1vh'}}>visit number: 41</p>
                                 </Card.Body>
                             </Card>
                             <Container className="card-background">
@@ -37,15 +39,17 @@ class Portfolio extends Component {
                         <div className="box-3">
                             <div>
                                 <Container className="mt-3">
-                                    <p className={'text-center'} style={{fontSize:'3vh'}}><strong>Hello</strong></p>
+                                    <p className={'text-center'} style={{fontSize: '3vh'}}><strong>Hello</strong></p>
                                     <br/>
-                                    <p className={'text-center'} style={{fontSize:'2.5vh'}}><strong>I'm Allen Wong</strong></p>
+                                    <p className={'text-center'} style={{fontSize: '2.5vh'}}><strong>I'm Allen
+                                        Wong</strong></p>
                                     <br/>
                                     <div className="text-center ">
                                         <Button variant="primary" as={Link} to="/resume" onClick={() => {
                                             this.props.handleClick('resume')
-                                        }} style={{fontSize:'1.5vh'}} className="me-3">Resume</Button>
-                                        <Button variant="outline-dark" style={{fontSize:'1.5vh'}} as={Link} to="/projects" onClick={() => {
+                                        }} style={{fontSize: '1.5vh'}} className="me-3">Resume</Button>
+                                        <Button variant="outline-dark" style={{fontSize: '1.5vh'}} as={Link}
+                                                to="/projects" onClick={() => {
                                             this.props.handleClick('projects')
                                         }}>Projects</Button>
                                     </div>
@@ -60,7 +64,8 @@ class Portfolio extends Component {
                                         </div>
                                         <div>
                                             <p>
-                                                In the past five years I mainly focus on backend development and have extensive experience. I'm also familiar
+                                                In the past five years I mainly focus on backend development and have
+                                                extensive experience. I'm also familiar
                                                 with frontend development.
                                             </p>
                                         </div>
