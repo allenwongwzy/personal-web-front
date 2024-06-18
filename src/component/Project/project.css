@@ -22,10 +22,12 @@
     min-height: 100vh; /* Set height to 100% of the viewport height */
     padding-top: 20px;
     box-sizing: border-box;
+    perspective: 1000px;
+    transform-style: preserve-3d;
 }
 
 .project-card {
-    box-shadow: var(--shd, -11.31px 11.31px 25px 0px  rgba(138,131,124,0.23));
+    box-shadow: -12px 12px 17px 5px rgba(138, 131, 124, 0.23);
     display: flex;
     justify-content: center;
     margin-bottom: 70px;
@@ -33,12 +35,15 @@
     width: 700px;
     background-color: white;
     border-radius: 5px;
-
+    transition: 0.5s;
 
     min-height: 50vh;
     min-width: 50vw;
 }
 
+.project-card:hover{
+    transform: translateZ(10px);
+}
 .project-title{
     width: 60%;
     text-align: left;

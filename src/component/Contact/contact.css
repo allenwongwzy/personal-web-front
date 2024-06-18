@@ -31,6 +31,7 @@
     width: 40vw;
     height: auto;
     background-color: white;
+    box-shadow: -12px 12px 17px 5px rgba(138, 131, 124, 0.23);
 }
 .contact-from{
     margin: 30px;
