@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
-import {Button, Col, Container} from "react-bootstrap";
-import './contact.css'
-import axios from "axios";
+import React, { Component } from 'react';
+import { Button, Col, Container } from 'react-bootstrap';
+import './contact.css';
+import axios from 'axios';
 
 class Contact extends Component {
     constructor(props) {
@@ -20,21 +20,20 @@ class Contact extends Component {
     }
 
     handleDisplay = () => {
-        this.setState({show: ''}, () => {
+        this.setState({ show: '' }, () => {
             console.log(this.state.show);
         });
         setTimeout(() => {
-            this.setState({show: 'none'});
+            this.setState({ show: 'none' });
         }, 3000);
-    }
+    };
 
     handleChange = (e) => {
-        const {name, value} = e.target;
+        const { name, value } = e.target;
         this.setState({
             [name]: value
         });
     };
-
 
     handleSubmit = async (e) => {
         e.preventDefault();
@@ -46,35 +45,40 @@ class Contact extends Component {
             message: this.state.message
         };
         const backendUrl = process.env.REACT_APP_BASEURL;
-        const {data: result} = await axios.post(`${backendUrl}/mail`, formData)
+        const { data: result } = await axios.post(`${backendUrl}/mail`, formData);
         if (result.code === 200) {
-            console.log("Send successful");
-            this.setState({
-                firstName: '',
-                lastName: '',
-                email: '',
-                subject: '',
-                message: '',
-            }, () => {
-                console.log("========", this.state);
-            })
-            this.handleDisplay()
+            console.log('Send successful');
+            this.setState(
+                {
+                    firstName: '',
+                    lastName: '',
+                    email: '',
+                    subject: '',
+                    message: ''
+                },
+                () => {
+                    console.log('========', this.state);
+                }
+            );
+            this.handleDisplay();
         }
     };
 
     render() {
         return (
             <div>
-                <Container className={'background-container-contact custom-font-contact'}>
-                    <div className={'contact-head'} style={{}}>
-                        <div className={'blue-square'}></div>
-                        <h2 style={{fontSize: '2.5vh'}}>Contact me</h2>
+                <Container className="background-container-contact custom-font-contact">
+                    <div className="contact-head">
+                        <div className="blue-square"></div>
+                        <h2 className="contact-title">Contact me</h2>
                     </div>
-                    <div className={'background-form'}>
+                    <div className="background-form">
                         <form className="contact-from" onSubmit={this.handleSubmit}>
-                            <div className={'first-line'}>
-                                <div className="form-group margin-1" style={{flexGrow: '1'}}>
-                                    <label htmlFor="firstName">First Name <span>*</span></label>
+                            <div className="first-line">
+                                <div className="form-group margin-1">
+                                    <label htmlFor="firstName">
+                                        First Name <span>*</span>
+                                    </label>
                                     <input
                                         type="text"
                                         id="firstName"
@@ -84,8 +88,10 @@ class Contact extends Component {
                                         required
                                     />
                                 </div>
-                                <div className="form-group" style={{flexGrow: '1'}}>
-                                    <label htmlFor="lastName">Last Name <span>*</span></label>
+                                <div className="form-group">
+                                    <label htmlFor="lastName">
+                                        Last Name <span>*</span>
+                                    </label>
                                     <input
                                         type="text"
                                         id="lastName"
@@ -98,7 +104,9 @@ class Contact extends Component {
                             </div>
 
                             <div className="form-group">
-                                <label htmlFor="email">Email <span>*</span></label>
+                                <label htmlFor="email">
+                                    Email <span>*</span>
+                                </label>
                                 <input
                                     type="email"
                                     id="email"
@@ -125,23 +133,24 @@ class Contact extends Component {
                                     name="message"
                                     value={this.state.message}
                                     onChange={this.handleChange}
-                                    style={{resize: 'none'}}
+                                    className="no-resize"
                                 />
                             </div>
 
-                            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'baseline'}}>
+                            <div className="form-footer">
                                 <Col>
-                                    <Button type="submit" style={{fontSize: '1.5vh'}} size={'sm'}>Send Form</Button>
+                                    <Button type="submit" className="send-button" size="sm">
+                                        Send Form
+                                    </Button>
                                 </Col>
                                 <Col>
-                                    <p className={'end-title'}
-                                       style={{fontSize: '1.5vh', display: this.state.show, color: 'blue'}}>Thanks for submitting </p>
+                                    <p className="end-title" style={{ display: this.state.show }}>
+                                        Thanks for submitting
+                                    </p>
                                 </Col>
                             </div>
-
                         </form>
                     </div>
-
                 </Container>
             </div>
         );

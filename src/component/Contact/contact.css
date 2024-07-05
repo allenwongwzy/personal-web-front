@@ -7,7 +7,7 @@
 
 .custom-font-contact {
     font-family: 'Avenir', sans-serif;
-    font-size: 2vh;
+    font-size: 1rem; /* Adjusted from 2vh to 1rem */
 }
 
 .background-container-contact {
@@ -17,31 +17,32 @@
     justify-content: center;
     max-width: 100% !important;
     align-items: center;
-
     width: 100vw; /* Set width to 100% of the viewport width */
     min-height: 100vh; /* Set height to 100% of the viewport height */
     padding: 20px; /* Add some padding for better spacing */
     box-sizing: border-box;
-
-
-    /*transform: translateY(-10px);*/
 }
 
-.background-form{
+.background-form {
     width: 40vw;
     height: auto;
     background-color: white;
     box-shadow: -12px 12px 17px 5px rgba(138, 131, 124, 0.23);
 }
-.contact-from{
+
+.contact-from {
     margin: 30px;
 }
+
 .form-group {
     margin-bottom: 15px;
+    flex-grow: 1;
 }
-.model-radius{
+
+.model-radius {
     border-radius: 0;
 }
+
 label {
     display: block;
     margin-bottom: 5px;
@@ -50,14 +51,17 @@ label {
 label span {
     color: blue;
 }
-.first-line{
+
+.first-line {
     display: flex;
     text-align: start;
 }
-.margin-1{
+
+.margin-1 {
     margin-right: 20px;
 }
-.contact-head{
+
+.contact-head {
     margin-top: 20px !important;
     display: flex;
     height: auto;
@@ -66,6 +70,15 @@ label span {
     overflow: hidden;
     align-items: baseline;
 }
+
+.contact-title {
+    font-size: 1.5625rem; /* Adjusted from 2.5vh to 1.5625rem */
+}
+
+.no-resize {
+    resize: none;
+}
+
 input,
 textarea {
     width: 100%;
@@ -81,6 +94,21 @@ textarea {
 input:focus,
 textarea:focus {
     border-bottom: 2px solid #ea0541;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.send-button {
+    font-size: 0.9375rem; /* Adjusted from 1.5vh to 0.9375rem */
+}
+
+.end-title {
+    font-size: 0.9375rem; /* Adjusted from 1.5vh to 0.9375rem */
+    color: blue;
 }
 
 @media (max-width: 768px) {
@@ -118,12 +146,14 @@ textarea:focus {
         padding: 30px; /* Add some padding for better spacing */
         box-sizing: border-box;
     }
-    .background-form{
+
+    .background-form {
         width: 70%;
         height: auto;
         background-color: white;
     }
-    .end-title{
+
+    .end-title {
         transform: translateY(-20%);
     }
 }
