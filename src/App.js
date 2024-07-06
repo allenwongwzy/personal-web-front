@@ -73,9 +73,9 @@ class App extends Component {
                 <div className='mt-custom content-container'>
                     <Routes>
                         <Route path="*" element={<Portfolio visitNumbers={this.state.visitNumber} handleClick={this.handleClick} className="mt-custom"/>}/>
-                        <Route path="/resume" element={<Resume/>}/>
-                        <Route path="/projects" element={<Project/>}/>
-                        <Route path="/contact" element={<Contact/>}/>
+                        <Route path="/personal-resume/resume" element={<Resume/>}/>
+                        <Route path="/personal-resume/projects" element={<Project/>}/>
+                        <Route path="/personal-resume/contact" element={<Contact/>}/>
                     </Routes>
                 </div>
                 <Footerpage/>

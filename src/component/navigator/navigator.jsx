@@ -42,20 +42,20 @@ class Navigator extends Component {
                         </Navbar.Brand>
                         <div className="flex-grow-1"></div>
                         <Nav className="ml-auto">
-                            <Nav.Link  as={Link} to="/home" onClick={() => {
+                            <Nav.Link  as={Link} to="/personal-resume/home" onClick={() => {
                                 this.props.handleClick('home');
                                 this.handleLinkClick();
                             }} style={{
                                 color: this.props.navigatorStates.home ? 'blue' : 'black'}}>ABOUT ME</Nav.Link>
-                            <Nav.Link as={Link} to="/resume" onClick={() => {
+                            <Nav.Link as={Link} to="/personal-resume/resume" onClick={() => {
                                 this.props.handleClick('resume');
                                 this.handleLinkClick();
                             }} style={{color: this.props.navigatorStates.resume ? 'blue' : 'black'}}>RESUME</Nav.Link>
-                            <Nav.Link as={Link} to="/projects" onClick={() => {
+                            <Nav.Link as={Link} to="/personal-resume/projects" onClick={() => {
                                 this.props.handleClick('projects');
                                 this.handleLinkClick();
                             }} style={{color: this.props.navigatorStates.projects ? 'blue' : 'black'}}>PROJECTS</Nav.Link>
-                            <Nav.Link as={Link} to="/contact" onClick={() => {
+                            <Nav.Link as={Link} to="/personal-resume/contact" onClick={() => {
                                 this.props.handleClick('contact');
                                 this.handleLinkClick();
                             }} style={{color: this.props.navigatorStates.contact ? 'blue' : 'black'}}>CONTACT</Nav.Link>
