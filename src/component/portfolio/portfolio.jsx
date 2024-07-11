@@ -52,11 +52,11 @@ class Portfolio extends Component {
                                         Wong</strong></p>
                                     <br/>
                                     <div className="text-center ">
-                                        <Button variant="primary" as={Link} to="/resume" onClick={() => {
+                                        <Button variant="primary" as={Link} to="personal-resume/resume" onClick={() => {
                                             this.props.handleClick('resume')
                                         }} style={{fontSize: '1.5vh'}} className="me-3">Resume</Button>
                                         <Button variant="outline-dark" style={{fontSize: '1.5vh'}} as={Link}
-                                                to="/projects" onClick={() => {
+                                                to="personal-resume/projects" onClick={() => {
                                             this.props.handleClick('projects')
                                         }}>Projects</Button>
                                     </div>
